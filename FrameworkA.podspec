@@ -14,12 +14,18 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
 
   spec.author             = { "Yozi Reci Manda" => "yozimanda11@gmail.com" }
-  spec.ios.deployment_target = "11.0"
+  spec.ios.deployment_target = "13.0"
   spec.swift_version         = "5.0"
 
   spec.source       = { :git => "https://github.com/ojimanda/FrameworkA.git", :tag => "#{spec.version}" }
 
   spec.source_files = "FrameworkA/**/*.{swift,h,m}"
+  spec.public_header_files = 'frameworkA/**/*.h'
+  spec.pod_target_xcconfig = {
+  'DEFINES_MODULE' => 'NO',
+  'SWIFT_OBJC_INTERFACE_HEADER_NAME' => 'FrameworkA-Swift.h',
+  'SWIFT_INSTALL_OBJC_HEADER' => 'NO'
+}
 
   spec.exclude_files = "Classes/Exclude"
 
