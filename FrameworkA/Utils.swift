@@ -13,7 +13,7 @@ public class Utils: NSObject {
     private var token: String
     
     public override init() {
-        token = "ABCDEFGHIJKLMNOPQ"
+        token = "ABCDE SWIFT"
     }
     
     public func getToken() -> String {

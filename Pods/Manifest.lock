@@ -1,0 +1,20 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.7.1)
+  - Shimmer (1.0.2)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (= 2.7.1)
+  - Shimmer (~> 1.0)
+
+SPEC REPOS:
+  trunk:
+    - ActionSheetPicker-3.0
+    - Shimmer
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 36da254b97a09ff89679ecb8b8510bd3e5bdc773
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+
+PODFILE CHECKSUM: b25c7f490c80eb70036e26406261186436d65b0c
+
+COCOAPODS: 1.16.2
