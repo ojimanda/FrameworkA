@@ -22,12 +22,15 @@ Pod::Spec.new do |spec|
   spec.source_files = "FrameworkA/**/*.{swift,h,m}"
   spec.public_header_files = 'frameworkA/**/*.h'
   spec.pod_target_xcconfig = {
-  'DEFINES_MODULE' => 'NO',
-  'SWIFT_OBJC_INTERFACE_HEADER_NAME' => 'FrameworkA-Swift.h',
-  'SWIFT_INSTALL_OBJC_HEADER' => 'NO'
+  'DEFINES_MODULE' => 'YES',
+  # 'SWIFT_OBJC_INTERFACE_HEADER_NAME' => 'FrameworkA-Swift.h',
+  'SWIFT_INSTALL_OBJC_HEADER' => 'YES',
+  'CLANG_ENABLE_MODULES' => 'YES'
 }
 
   spec.exclude_files = "Classes/Exclude"
+  spec.static_framework = true
+  spec.requires_arc = true
 
   spec.dependency 'Shimmer', '~> 1.0'
   spec.dependency 'ActionSheetPicker-3.0', '2.7.1'

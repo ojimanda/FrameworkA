@@ -6,10 +6,12 @@
 //
 
 #import "UtilsObjc.h"
+#import <FrameworkA/FrameworkA-Swift.h>
 
 @implementation UtilsObjc
 
 - (nonnull NSString *)getToken {
+    Utils *utils = [[Utils alloc] init];
     return @"ABCDE OBJC";
 }
 

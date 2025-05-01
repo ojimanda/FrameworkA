@@ -11,6 +11,7 @@ import Foundation
 public class Utils: NSObject {
     
     private var token: String
+    let utils = UtilsObjc()
     
     public override init() {
         token = "ABCDE SWIFT"
